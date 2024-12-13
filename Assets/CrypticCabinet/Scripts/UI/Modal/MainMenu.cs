@@ -18,7 +18,7 @@ namespace CrypticCabinet.UI.Modal
         public void OnSinglePlayerPressed()
         {
             UISystem.Instance.HideMainMenu();
-            PhotonConnector.Instance.StartSinglePlayerSession();
+            //PhotonConnector.Instance.StartSinglePlayerSession();
             // Any optional actions to perform after that
             OnSinglePlayerPressedAction?.Invoke();
         }

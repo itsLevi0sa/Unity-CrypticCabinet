@@ -54,6 +54,10 @@ namespace CrypticCabinet.GameManagement
             m_currentGamePhaseIndex = -1;
         }
 
+        private void Start()
+        {
+            //StartGameplay();
+        }
         /// <summary>
         ///     Starts the gameplay by initializing the current game phase and running it.
         /// </summary>

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.35895914, g: 0.3117824, b: 0.2776817, a: 1}
+  m_IndirectSpecularColor: {r: 0.36013132, g: 0.31253764, b: 0.27849615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1753,6 +1753,34 @@ PrefabInstance:
     - target: {fileID: 7255549295236070695, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: RequestRoomSetup, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1082815690}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartGameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CrypticCabinet.GameManagement.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274373216697733473, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
+      propertyPath: OnSinglePlayerPressedAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7485815610043055126, guid: a37155f7bf534ad489b9a243e0f52256, type: 3}
       propertyPath: m_AnchorMax.y

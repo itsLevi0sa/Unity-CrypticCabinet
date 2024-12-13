@@ -31,6 +31,7 @@ namespace CrypticCabinet.GameManagement.Timeline
                         }
                     });
             }
+            GameManager.Instance.NextGameplayPhase();
         }
 
         protected override void DeinitializeInternal()

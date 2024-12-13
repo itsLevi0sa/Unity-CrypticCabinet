@@ -22,17 +22,10 @@ namespace CrypticCabinet.GameManagement.RoomSetup
 
         protected override void InitializeInternal()
         {
-            if (PhotonConnector.Instance != null && PhotonConnector.Instance.IsMasterClient())
-            {
-                // Spawn the prefab and hooks the callback for when the user accepts the desired objects' placement.
-                m_spawnedPlacementManager = Instantiate(m_placementPrefab);
-                m_spawnedPlacementManager.ConfirmObjectPlacementsCallback += ConfirmObjectPlacementsCallback;
-            }
-            else
-            {
-                UISystem.Instance.HideAll();
-                GameManager.Instance.NextGameplayPhase();
-            }
+            Debug.Log("Initialize internal on ObjectSpawnLogicPhase called!");
+            m_spawnedPlacementManager = Instantiate(m_placementPrefab);
+            GameManager.Instance.NextGameplayPhase();
+            m_spawnedPlacementManager.ConfirmObjectPlacementsCallback += ConfirmObjectPlacementsCallback;
         }
 
         /// <summary>
@@ -40,6 +33,7 @@ namespace CrypticCabinet.GameManagement.RoomSetup
         /// </summary>
         private static void ConfirmObjectPlacementsCallback()
         {
+            Debug.Log("Next gameplay phase called!");
             GameManager.Instance.NextGameplayPhase();
         }
 
